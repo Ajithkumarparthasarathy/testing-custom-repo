@@ -3,14 +3,14 @@ on: [push]
 
 jobs: 
     bump-version:
-    name: Increment tag
+    name: Increment Tag Auto
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Increment git tag
-        id: increment-git-tag
+      - name: Increment Tag Auto
+        id: increment-tag-auto
         uses: Ajithkumarparthasarathy/increment-tag-auto@v1
         with:
            version-type: patch
